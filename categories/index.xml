@@ -1,43 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on 张昊-MOLO</title>
-        <link>https://tu-MOLO.github.io/categories/</link>
-        <description>Recent content in Categories on 张昊-MOLO</description>
+        <title>Categories on Example Site</title>
+        <link>https://example.com/categories/</link>
+        <description>Recent content in Categories on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
+        <language>en</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://tu-MOLO.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>闲言碎语</title>
-        <link>https://tu-MOLO.github.io/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/</link>
-        <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://tu-MOLO.github.io/categories/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Syntax</title>
-        <link>https://tu-MOLO.github.io/categories/syntax/</link>
+        <link>https://example.com/categories/syntax/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/categories/syntax/</guid>
+        <guid>https://example.com/categories/syntax/</guid>
         <description></description>
         </item>
         <item>
         <title>Themes</title>
-        <link>https://tu-MOLO.github.io/categories/themes/</link>
+        <link>https://example.com/categories/themes/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/categories/themes/</guid>
+        <guid>https://example.com/categories/themes/</guid>
         <description></description>
         </item>
         <item>
         <title>Test</title>
-        <link>https://tu-MOLO.github.io/categories/test/</link>
+        <link>https://example.com/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/categories/test/</guid>
-        <description>&lt;img src="https://tu-MOLO.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://example.com/categories/test/</guid>
+        <description>&lt;img src="https://example.com/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>

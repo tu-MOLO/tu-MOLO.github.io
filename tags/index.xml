@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on 张昊-MOLO</title>
-        <link>https://tu-MOLO.github.io/tags/</link>
-        <description>Recent content in Tags on 张昊-MOLO</description>
+        <title>Tags on Example Site</title>
+        <link>https://example.com/tags/</link>
+        <description>Recent content in Tags on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
+        <language>en</language>
         <copyright>Example Person</copyright>
-        <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://tu-MOLO.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>博客开篇</title>
-        <link>https://tu-MOLO.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BC%80%E7%AF%87/</link>
-        <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://tu-MOLO.github.io/tags/%E5%8D%9A%E5%AE%A2%E5%BC%80%E7%AF%87/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Css</title>
-        <link>https://tu-MOLO.github.io/tags/css/</link>
+        <link>https://example.com/tags/css/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/tags/css/</guid>
+        <guid>https://example.com/tags/css/</guid>
         <description></description>
         </item>
         <item>
         <title>Html</title>
-        <link>https://tu-MOLO.github.io/tags/html/</link>
+        <link>https://example.com/tags/html/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/tags/html/</guid>
+        <guid>https://example.com/tags/html/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown</title>
-        <link>https://tu-MOLO.github.io/tags/markdown/</link>
+        <link>https://example.com/tags/markdown/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/tags/markdown/</guid>
+        <guid>https://example.com/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>Themes</title>
-        <link>https://tu-MOLO.github.io/tags/themes/</link>
+        <link>https://example.com/tags/themes/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tu-MOLO.github.io/tags/themes/</guid>
+        <guid>https://example.com/tags/themes/</guid>
         <description></description>
         </item>
         
