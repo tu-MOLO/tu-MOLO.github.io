@@ -306,6 +306,7 @@
         <li>
           <ol>
             <li><a href="#code-block-with-backticks">Code block with backticks</a></li>
+            <li><a href="#测试">测试</a></li>
             <li><a href="#code-block-indented-with-four-spaces">Code block indented with four spaces</a></li>
             <li><a href="#code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</a></li>
             <li><a href="#diff-code-block">Diff code block</a></li>
@@ -518,6 +519,91 @@
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="测试">测试
+</h4><blockquote class="alert alert-note">
+    <p>note测试</p></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">class GradeManagementSystem:
+</span></span><span class="line"><span class="cl">        更新学生课程成绩
+</span></span><span class="line"><span class="cl">        :param student_id: 学生学号
+</span></span><span class="line"><span class="cl">        :param course: 课程名称
+</span></span><span class="line"><span class="cl">        :param new_score: 新的课程成绩
+</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">        student = self.get_student(student_id)
+</span></span><span class="line"><span class="cl">        if student:
+</span></span><span class="line"><span class="cl">            student.update_score(course, new_score)
+</span></span><span class="line"><span class="cl">        else:
+</span></span><span class="line"><span class="cl">            print(f&#34;学号为 {student_id} 的学生不存在，无法更新成绩。&#34;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    def get_student_score(self, student_id, course):
+</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">        获取学生课程成绩
+</span></span><span class="line"><span class="cl">        :param student_id: 学生学号
+</span></span><span class="line"><span class="cl">        :param course: 课程名称
+</span></span><span class="line"><span class="cl">        :return: 课程成绩，如果学生不存在或未录入该课程成绩则返回 None
+</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">        student = self.get_student(student_id)
+</span></span><span class="line"><span class="cl">        if student:
+</span></span><span class="line"><span class="cl">            return student.get_score(course)
+</span></span><span class="line"><span class="cl">        else:
+</span></span><span class="line"><span class="cl">            print(f&#34;学号为 {student_id} 的学生不存在，无法获取成绩。&#34;)
+</span></span><span class="line"><span class="cl">            return None
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    def get_student_all_scores(self, student_id):
+</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">        获取学生所有课程成绩
+</span></span><span class="line"><span class="cl">        :param student_id: 学生学号
+</span></span><span class="line"><span class="cl">        :return: 包含所有课程和成绩的字典，如果学生不存在则返回 None
+</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
+</span></span><span class="line"><span class="cl">        student = self.get_student(student_id)
+</span></span><span class="line"><span class="cl">        if student:
+</span></span><span class="line"><span class="cl">            return student.get_all_scores()
+</span></span><span class="line"><span class="cl">        else:
+</span></span><span class="line"><span class="cl">            print(f&#34;学号为 {student_id} 的学生不存在，无法获取所有成绩。&#34;)
+</span></span><span class="line"><span class="cl">            return None
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces
