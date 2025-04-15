@@ -566,44 +566,44 @@
 </span><span class="lnt">38
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">class GradeManagementSystem:
-</span></span><span class="line"><span class="cl">        更新学生课程成绩
-</span></span><span class="line"><span class="cl">        :param student_id: 学生学号
-</span></span><span class="line"><span class="cl">        :param course: 课程名称
-</span></span><span class="line"><span class="cl">        :param new_score: 新的课程成绩
-</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">        student = self.get_student(student_id)
-</span></span><span class="line"><span class="cl">        if student:
-</span></span><span class="line"><span class="cl">            student.update_score(course, new_score)
-</span></span><span class="line"><span class="cl">        else:
-</span></span><span class="line"><span class="cl">            print(f&#34;学号为 {student_id} 的学生不存在，无法更新成绩。&#34;)
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">class</span> <span class="na">GradeManagementSystem:</span>
+</span></span><span class="line"><span class="cl">        <span class="na">更新学生课程成绩</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:param</span> <span class="na">student_id:</span> <span class="na">学生学号</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:param</span> <span class="na">course:</span> <span class="na">课程名称</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:param</span> <span class="na">new_score:</span> <span class="na">新的课程成绩</span>
+</span></span><span class="line"><span class="cl">        <span class="err">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">student </span><span class="o">=</span> <span class="s">self.get_student(student_id)</span>
+</span></span><span class="line"><span class="cl">        <span class="na">if</span> <span class="na">student:</span>
+</span></span><span class="line"><span class="cl">            <span class="na">student</span><span class="err">.</span><span class="na">update_score</span><span class="err">(</span><span class="na">course</span><span class="err">,</span> <span class="na">new_score</span><span class="err">)</span>
+</span></span><span class="line"><span class="cl">        <span class="na">else:</span>
+</span></span><span class="line"><span class="cl">            <span class="na">print</span><span class="err">(</span><span class="na">f</span><span class="err">&#34;</span><span class="na">学号为</span> <span class="err">{</span><span class="na">student_id</span><span class="err">}</span> <span class="na">的学生不存在</span><span class="err">，</span><span class="na">无法更新成绩</span><span class="err">。&#34;)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    def get_student_score(self, student_id, course):
-</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">        获取学生课程成绩
-</span></span><span class="line"><span class="cl">        :param student_id: 学生学号
-</span></span><span class="line"><span class="cl">        :param course: 课程名称
-</span></span><span class="line"><span class="cl">        :return: 课程成绩，如果学生不存在或未录入该课程成绩则返回 None
-</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">        student = self.get_student(student_id)
-</span></span><span class="line"><span class="cl">        if student:
-</span></span><span class="line"><span class="cl">            return student.get_score(course)
-</span></span><span class="line"><span class="cl">        else:
-</span></span><span class="line"><span class="cl">            print(f&#34;学号为 {student_id} 的学生不存在，无法获取成绩。&#34;)
-</span></span><span class="line"><span class="cl">            return None
+</span></span><span class="line"><span class="cl">    <span class="na">def</span> <span class="na">get_student_score</span><span class="err">(</span><span class="na">self</span><span class="err">,</span> <span class="na">student_id</span><span class="err">,</span> <span class="na">course</span><span class="err">)</span><span class="na">:</span>
+</span></span><span class="line"><span class="cl">        <span class="err">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">获取学生课程成绩</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:param</span> <span class="na">student_id:</span> <span class="na">学生学号</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:param</span> <span class="na">course:</span> <span class="na">课程名称</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:return:</span> <span class="na">课程成绩</span><span class="err">，</span><span class="na">如果学生不存在或未录入该课程成绩则返回</span> <span class="na">None</span>
+</span></span><span class="line"><span class="cl">        <span class="err">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">student </span><span class="o">=</span> <span class="s">self.get_student(student_id)</span>
+</span></span><span class="line"><span class="cl">        <span class="na">if</span> <span class="na">student:</span>
+</span></span><span class="line"><span class="cl">            <span class="na">return</span> <span class="na">student</span><span class="err">.</span><span class="na">get_score</span><span class="err">(</span><span class="na">course</span><span class="err">)</span>
+</span></span><span class="line"><span class="cl">        <span class="na">else:</span>
+</span></span><span class="line"><span class="cl">            <span class="na">print</span><span class="err">(</span><span class="na">f</span><span class="err">&#34;</span><span class="na">学号为</span> <span class="err">{</span><span class="na">student_id</span><span class="err">}</span> <span class="na">的学生不存在</span><span class="err">，</span><span class="na">无法获取成绩</span><span class="err">。&#34;)</span>
+</span></span><span class="line"><span class="cl">            <span class="na">return</span> <span class="na">None</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    def get_student_all_scores(self, student_id):
-</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">        获取学生所有课程成绩
-</span></span><span class="line"><span class="cl">        :param student_id: 学生学号
-</span></span><span class="line"><span class="cl">        :return: 包含所有课程和成绩的字典，如果学生不存在则返回 None
-</span></span><span class="line"><span class="cl">        &#34;&#34;&#34;
-</span></span><span class="line"><span class="cl">        student = self.get_student(student_id)
-</span></span><span class="line"><span class="cl">        if student:
-</span></span><span class="line"><span class="cl">            return student.get_all_scores()
-</span></span><span class="line"><span class="cl">        else:
-</span></span><span class="line"><span class="cl">            print(f&#34;学号为 {student_id} 的学生不存在，无法获取所有成绩。&#34;)
-</span></span><span class="line"><span class="cl">            return None
+</span></span><span class="line"><span class="cl">    <span class="na">def</span> <span class="na">get_student_all_scores</span><span class="err">(</span><span class="na">self</span><span class="err">,</span> <span class="na">student_id</span><span class="err">)</span><span class="na">:</span>
+</span></span><span class="line"><span class="cl">        <span class="err">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">获取学生所有课程成绩</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:param</span> <span class="na">student_id:</span> <span class="na">学生学号</span>
+</span></span><span class="line"><span class="cl">        <span class="na">:return:</span> <span class="na">包含所有课程和成绩的字典</span><span class="err">，</span><span class="na">如果学生不存在则返回</span> <span class="na">None</span>
+</span></span><span class="line"><span class="cl">        <span class="err">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">student </span><span class="o">=</span> <span class="s">self.get_student(student_id)</span>
+</span></span><span class="line"><span class="cl">        <span class="na">if</span> <span class="na">student:</span>
+</span></span><span class="line"><span class="cl">            <span class="na">return</span> <span class="na">student</span><span class="err">.</span><span class="na">get_all_scores</span><span class="err">()</span>
+</span></span><span class="line"><span class="cl">        <span class="na">else:</span>
+</span></span><span class="line"><span class="cl">            <span class="na">print</span><span class="err">(</span><span class="na">f</span><span class="err">&#34;</span><span class="na">学号为</span> <span class="err">{</span><span class="na">student_id</span><span class="err">}</span> <span class="na">的学生不存在</span><span class="err">，</span><span class="na">无法获取所有成绩</span><span class="err">。&#34;)</span>
+</span></span><span class="line"><span class="cl">            <span class="na">return</span> <span class="na">None</span><span class="p">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces
