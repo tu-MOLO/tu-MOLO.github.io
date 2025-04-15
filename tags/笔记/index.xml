@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>笔记 on 张昊-MOLO</title>
+        <link>https://tu-molo.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+        <description>Recent content in 笔记 on 张昊-MOLO</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://tu-molo.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C/C&#43;&#43; 算法笔记</title>
+        <link>https://tu-molo.github.io/p/c/c-%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://tu-molo.github.io/p/c/c-%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;img src="https://tu-molo.github.io/p/c/c-%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/suanfa.jpg" alt="Featured image of post C/C&#43;&#43; 算法笔记" /&gt;&lt;p&gt;因为这段时间在准备学校学院里的acm竞赛，目前还算熟练掌握的语言就是 c/c++，所以以此开启我对我的学习历程的记录。&lt;/p&gt;
+&lt;h2 id=&#34;笔记连载内容概述&#34;&gt;笔记连载内容概述
+&lt;/h2&gt;&lt;h3 id=&#34;基础算法&#34;&gt;基础算法
+&lt;/h3&gt;&lt;p&gt;我会从最基础的算法开始，参考网上大多数的算法教程，按合适的学习顺序，记录我的算法学习笔记。&lt;/p&gt;
+&lt;h2 id=&#34;连载目标&#34;&gt;连载目标
+&lt;/h2&gt;&lt;p&gt;这个连载的目标是帮助自己建立起扎实的 C/C++ 算法基础。&lt;/p&gt;
+&lt;p&gt;在每一篇文章中，我会尽量用自己的语言和理解记录算法知识，同时提供详细的代码示例和解释。&lt;/p&gt;
+&lt;h2 id=&#34;让我们一起开始吧&#34;&gt;让我们一起开始吧
+&lt;/h2&gt;&lt;p&gt;从下一篇文章开始，我将正式踏上 C/C++ 算法知识的学习之旅。希望你能和我一起，在这个充满挑战和乐趣的过程中不断探索和成长。&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
