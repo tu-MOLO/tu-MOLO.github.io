@@ -388,48 +388,22 @@
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="err">\</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="err">\</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>           <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="err">\</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>           <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>           <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 未找到目标值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 未找到目标值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="实现方式-2递归实现">实现方式 2：递归实现
@@ -448,44 +422,20 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binarySearchRecursive</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="err">\</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">left</span><span class="p">,</span> <span class="kt">int</span> <span class="n">right</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">if</span> <span class="p">(</span><span class="n">left</span> <span class="o">&gt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 未找到目标值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="err">\</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="err">\</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="k">return</span> <span class="n">binarySearchRecursive</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="k">return</span> <span class="n">binarySearchRecursive</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binarySearchRecursive</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">left</span><span class="p">,</span> <span class="kt">int</span> <span class="n">right</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">left</span> <span class="o">&gt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 未找到目标值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">mid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">binarySearchRecursive</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">binarySearchRecursive</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -505,42 +455,20 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binarySearchByColor</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="err">\</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="k">if</span> <span class="p">(</span><span class="n">isBlue</span><span class="p">(</span><span class="n">arr</span><span class="err">\</span><span class="p">[</span><span class="n">mid</span><span class="p">]))</span> <span class="p">{</span>  <span class="c1">// isBlue函数判断元素是否满足条件（蓝色）
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>           <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>           <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">return</span> <span class="n">left</span><span class="p">;</span>  <span class="c1">// 返回满足条件的最小索引
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">binarySearchByColor</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">isBlue</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">mid</span><span class="p">]))</span> <span class="p">{</span>  <span class="c1">// isBlue函数判断元素是否满足条件（蓝色）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">right</span> <span class="o">=</span> <span class="n">mid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">left</span><span class="p">;</span>  <span class="c1">// 返回满足条件的最小索引
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="最大值最小化">最大值最小化
@@ -571,37 +499,19 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="err">\#</span><span class="n">include</span> <span class="err">\</span><span class="o">&lt;</span><span class="n">iostream</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">\#</span><span class="n">include</span> <span class="err">\</span><span class="o">&lt;</span><span class="n">algorithm</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">\#</span><span class="n">include</span> <span class="err">\</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="err">\</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">lower</span><span class="err">\</span><span class="n">_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">4</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;第一个大于或等于4的元素是: &#34;</span> <span class="o">&lt;&lt;</span> <span class="err">\</span><span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">lower_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;第一个大于或等于4的元素是: &#34;</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -622,37 +532,19 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="err">\#</span><span class="n">include</span> <span class="err">\</span><span class="o">&lt;</span><span class="n">iostream</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">\#</span><span class="n">include</span> <span class="err">\</span><span class="o">&lt;</span><span class="n">algorithm</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">\#</span><span class="n">include</span> <span class="err">\</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="err">\</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">upper</span><span class="err">\</span><span class="n">_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">4</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>       <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;第一个大于4的元素是: &#34;</span> <span class="o">&lt;&lt;</span> <span class="err">\</span><span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&amp;</span><span class="err">#</span><span class="n">x20</span><span class="p">;</span>   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">upper_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">it</span> <span class="o">!=</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;第一个大于4的元素是: &#34;</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">it</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
