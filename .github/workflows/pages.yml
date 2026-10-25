@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # 每天 18:00 UTC（北京时间 02:00）自动同步一次源码
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,14 +19,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
+      - name: Checkout 站点源码
         uses: actions/checkout@v4
+        with:
+          repository: tu-MOLO/hugo-main
+          ref: main
+          path: hugo-src
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.168.0"
+          extended: true
+
+      - name: Build
+        run: hugo -D --source hugo-src --destination "${{ github.workspace }}/public"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -31,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment
